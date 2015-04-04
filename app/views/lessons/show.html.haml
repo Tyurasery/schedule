@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Room:
+  = @lesson.room
+%p
+  %b Teacher:
+  = @lesson.teacher
+%p
+  %b Group num:
+  = @lesson.group_num
+%p
+  %b Lesson name:
+  = @lesson.lesson_name
+%p
+  %b Start at:
+  = @lesson.start_at
+%p
+  %b End at:
+  = @lesson.end_at
+
+= link_to 'Edit', edit_lesson_path(@lesson)
+\|
+= link_to 'Back', lessons_path
